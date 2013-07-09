@@ -7,7 +7,7 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response)
 
 {
-  var sent = fs.readFileSync('/bitstarter/index.html').toString('utf-8');
+  var sent = fs.readFileSync('~/bitstarter/index.html').toString('utf-8');
   response.send(sent);
 });
 
